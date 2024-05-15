@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 
-function MovieCard({ id, title, genres, duration }) {
+function MovieCard({ id, title, genres = [], duration }) {
   return (
     <article>
-      <NavBar/>
+      <NavBar />
       <h2>{title}</h2>
       <p>Duration: {duration} minutes</p>
       <div>

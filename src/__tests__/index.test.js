@@ -33,10 +33,10 @@ test('renders the Directors component on route "/directors"', () => {
   expect(screen.queryByText(/Directors Page/)).toBeInTheDocument();
 });
 
-test('renders the Movie component on route "/movie/:id"', async () => {
+test('renders the Movie component on route "/movies/:id"', async () => {
     const id = 1
     const router = createMemoryRouter(routes, {
-        initialEntries: [`/movie/${id}`]
+        initialEntries: [`/movies/${id}`]
     })
   render(
     <RouterProvider router={router}/>

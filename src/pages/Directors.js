@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NavBar from "../components/NavBar"; 
 
 function Directors() {
  
@@ -15,6 +16,7 @@ function Directors() {
 
   return (
     <>
+    <NavBar/>
      <header>
       <h1>Directors Page</h1>
      </header>

@@ -5,7 +5,7 @@ import routes from "../routes";
 
 const id = 1
 const router = createMemoryRouter(routes, {
-    initialEntries: [`/movie/${id}`],
+    initialEntries: [`/movies/${id}`],
     initialIndex: 0
 })
 
@@ -45,7 +45,7 @@ test("renders a span for each genre",  () => {
 
 test("renders the <NavBar /> component", async () => {
   const router = createMemoryRouter(routes, {
-    initialEntries: [`/movie/1`]
+    initialEntries: [`/movies/${id}`]
   })
   render(
       <RouterProvider router={router}/>

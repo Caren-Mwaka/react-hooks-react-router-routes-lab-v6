@@ -2,12 +2,14 @@
     display: inline-block;
     box-sizing: border-box;
     width: 70px;
-    padding: 5px;
+    padding: 2px 4px;
     margin: 0 6px 6px;
     background: lightblue;
+    background-color: rgba(200, 200, 200, 0.5);
     text-decoration: none;
     text-align: center;
     font-size: min(10vw, 15px) ;
+    font-style: italic;
     color: black;
 }
   
